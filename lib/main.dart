@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project8hours/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,14 +8,8 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Material(
-          child: Center(
-        child: Text('Well come to 30 day of flutter'),
-      )),
-    );
+    return const MaterialApp(home: HomePage());
   }
 }
