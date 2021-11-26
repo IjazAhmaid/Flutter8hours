@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
-
+  final imgurl =
+      "https://github.com/flutter/plugins/raw/master/packages/video_player/video_player/doc/demo_ipod.gif?raw=true";
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -15,11 +16,13 @@ class MyDrawer extends StatelessWidget {
             DrawerHeader(
                 padding: EdgeInsets.zero,
                 child: UserAccountsDrawerHeader(
-                  // decoration: BoxDecoration(color: Colors.red),
-                  margin: EdgeInsets.zero,
-                  accountName: Text("Ijaz Ahmad"),
-                  accountEmail: Text("ejazmaitla@gmail.com"),
-                )),
+                    // decoration: BoxDecoration(color: Colors.red),
+                    margin: EdgeInsets.zero,
+                    accountName: Text("Ijaz Ahmad"),
+                    accountEmail: Text("ejazmaitla@gmail.com"),
+                    currentAccountPicture: CircleAvatar(
+                      backgroundImage: NetworkImage('imgurl'),
+                    ))),
             ListTile(
                 title: Text(
                   "Home",
