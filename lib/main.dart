@@ -3,6 +3,7 @@ import 'package:project8hours/pages/home_page.dart';
 import 'package:project8hours/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project8hours/utlis/routes.dart';
+import 'package:project8hours/widgets/thems.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,12 +18,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         //home: const HomePage(),
         themeMode: ThemeMode.light,
-        theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-          //primaryTextTheme: GoogleFonts.latoTextTheme()
-          fontFamily: GoogleFonts.lato().fontFamily,
-        ),
-        darkTheme: ThemeData(brightness: Brightness.dark),
+        theme: MyTheme.lightTheme(context),
+        darkTheme: MyTheme.darkTheme(context),
         initialRoute: MyRoutes.homeRoute,
         routes: {
           "/": (context) => const LoginPage(),

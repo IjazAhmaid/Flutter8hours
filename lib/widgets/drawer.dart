@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
-  final imgurl =
-      "https://github.com/flutter/plugins/raw/master/packages/video_player/video_player/doc/demo_ipod.gif?raw=true";
+  final imgurl = "https://picsum.photos/250?image=9";
   @override
   Widget build(BuildContext context) {
     return Drawer(
