@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 
 import 'package:project8hours/models/catalog.dart';
 import 'package:project8hours/widgets/drawer.dart';
-import 'package:project8hours/widgets/item_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -45,12 +44,48 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Padding(
-          padding: const EdgeInsets.all(18.0),
-          child: ListView.builder(
+        padding: const EdgeInsets.all(20.0),
+        /* ListView.builder(
               itemCount: CatalogModel.items.length,
               itemBuilder: (context, index) => Itemwidget(
                     item: CatalogModel.items[index],
-                  ))),
+                  )) */
+        child: GridView.builder(
+            itemCount: CatalogModel.items.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              mainAxisSpacing: 16,
+              crossAxisSpacing: 16,
+            ),
+            itemBuilder: (context, index) {
+              final item = CatalogModel.items[index];
+              return Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: GridTile(
+                  header: Container(
+                    child: Text(
+                      item.name,
+                      style: const TextStyle(color: Colors.white),
+                    ),
+                    padding: const EdgeInsets.all(12),
+                    decoration: const BoxDecoration(color: Colors.deepPurple),
+                  ),
+                  child: Image.network(item.image),
+                  footer: Container(
+                    child: Text(
+                      item.price.toString(),
+                      style: const TextStyle(color: Colors.white),
+                    ),
+                    padding: const EdgeInsets.all(12),
+                    decoration: const BoxDecoration(color: Colors.black),
+                  ),
+                ),
+              );
+            }),
+      ),
       drawer: const MyDrawer(),
     );
   }
