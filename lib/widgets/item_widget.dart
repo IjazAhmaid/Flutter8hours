@@ -7,11 +7,11 @@ class Itemwidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      //shape: StadiumBorder(),
+      // color: Colors.red,
       elevation: 0.0,
       child: ListTile(
-        onTap: () {
-          print(item.name);
-        },
+        onTap: () {},
         leading: Image.network(item.image),
         title: Text(item.name),
         subtitle: Text(item.desc),
