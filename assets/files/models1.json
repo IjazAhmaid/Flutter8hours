@@ -6,7 +6,7 @@
       "desc": "ijaz ahmad maitla",
       "price": 990,
       "color": "#33505a",
-      "image": "https://picsum.photos/250?image=9"
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "desc": "ijaz ahmad maitla",
       "price": 90,
       "color": "#33505a",
-      "image": "https://picsum.photos/250?image=9"
+      "image": "https://mobilemall.pk/public_html/images/no_image.png"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "desc": "dell laptop model 12 available for sale",
       "price": 590,
       "color": "#33505a",
-      "image": "https://picsum.photos/250?image=9"
+      "image": "http://images.amazon.com/images/P/0596004613.01._PE30_PI_SCMZZZZZZZ_.jpg"
     },
     {
       "id": 4,
@@ -30,7 +30,39 @@
       "desc": "ijaz ahmad maitla",
       "price": 990,
       "color": "#33505a",
-      "image": "https://picsum.photos/250?image=9"
+      "image": "http://images.amazon.com/images/P/0596004478.01.20TRZZZZ.jpg"
+    },
+    {
+      "id": 1,
+      "name": "ijaz",
+      "desc": "ijaz ahmad maitla",
+      "price": 990,
+      "color": "#33505a",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ijaz",
+      "desc": "ijaz ahmad maitla",
+      "price": 90,
+      "color": "#33505a",
+      "image": "https://www.pakmobizone.pk/wp-content/uploads/2019/09/apple-iphone-11-6.jpg"
+    },
+    {
+      "id": 3,
+      "name": "laptop",
+      "desc": "dell laptop model 12 available for sale",
+      "price": 590,
+      "color": "#33505a",
+      "image": "http://images.amazon.com/images/P/0596004613.01._PE30_PI_SCMZZZZZZZ_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "ijaz",
+      "desc": "ijaz ahmad maitla",
+      "price": 990,
+      "color": "#33505a",
+      "image": "http://images.amazon.com/images/P/0596004478.01.20TRZZZZ.jpg"
     }
   ]
 }
